@@ -1,4 +1,9 @@
-import { DBConn } from "./core/database/DBConn";
-import { DBTenantModelRefsFactory } from "./tenant/DBTenantModelRefsFactory";
+interface IPaging {
+  from: number;
+  to: number;
+  offset: number
+  limit: 100
+}
 
-const dbConn = new DBConn(DBTenantModelRefsFactory)
+
+
